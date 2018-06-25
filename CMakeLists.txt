@@ -74,7 +74,7 @@ list(APPEND SOURCEFILES
 )
 
 # List all files (headers) contained by StVO-PL library
-file(GLOB_RECURSE all_include_files RELATIVE "${CMAKE_SOURCE_DIR}" *.h *.hpp)
+file(GLOB_RECURSE all_include_files RELATIVE "${PROJECT_SOURCE_DIR}" *.h *.hpp)
 
 # Visualize the files of this directory in IDE creating an custom empty target
 add_custom_target( stvo_includes DEPENDS ${all_include_files} SOURCES ${all_include_files} )
