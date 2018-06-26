@@ -91,6 +91,8 @@ endif()
 # Applications
 add_executable       ( imagesStVO app/imagesStVO.cpp )
 target_link_libraries( imagesStVO stvo )
+add_executable       ( stvopl_online app/stvopl_online.cpp )
+target_link_libraries( stvopl_online stvo ${catkin_LIBRARIES} )
 
 
 

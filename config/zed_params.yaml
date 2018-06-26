@@ -1,0 +1,20 @@
+cam0:
+  cam_mode: VGA
+  cam_cx: 348.498749
+  cam_cy: 187.100311
+  cam_d0: 0.0
+  cam_d1: 0.0
+  cam_d2: 0.0
+  cam_d3: 0.0
+  cam_fx: 334.125854
+  cam_fy: 334.125854
+  cam_bl: 0.12
+  cam_height: 376
+  cam_model: Pinhole
+  cam_width: 672
+  rx: 0.0
+  ry: 0.0
+  rz: 0.0
+  tx: 0.0
+  ty: 0.0
+  tz: 0.0
