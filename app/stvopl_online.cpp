@@ -61,9 +61,10 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
 
     //ros::Subscriber sub = nh.subscribe("chatter", 1000, chatterCallback);
-    ros::Subscriber sub_leftIm = nh.subscribe("/zed/left/image_rect_color", 1000, leftImCallback);
-    ros::Subscriber sub_rightIm = nh.subscribe("/zed/right/image_rect_color", 1000, rightImCallback);
-    ros::Subscriber sub_leftCompressedIm = nh.subscribe("/zed/right/image_raw_color/compressed", 1000, leftCompressedImCallback);
+    // ros::Subscriber sub_leftIm = nh.subscribe("/zed/left/image_rect_color", 1000, leftImCallback);
+    // ros::Subscriber sub_rightIm = nh.subscribe("/zed/right/image_rect_color", 1000, rightImCallback);
+    ros::Subscriber sub_leftCompressedIm = nh.subscribe("/zed/left/image_rect_color/compressed", 1000, leftCompressedImCallback);
+    ros::Subscriber sub_rightCompressedIm = nh.subscribe("/zed/right/image_rect_color/compressed", 1000, rightCompressedImCallback);
 
     // read inputs
     string config_file, camera_params, scene_config;
